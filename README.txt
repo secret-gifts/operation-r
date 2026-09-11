@@ -1,0 +1,1 @@
+Rima Invitation V3 — upload ALL files in this folder directly to the root of your GitHub repository. Images intentionally live in the root; there is no assets folder.

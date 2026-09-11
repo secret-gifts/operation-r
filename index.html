@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f7f7f4"><title>For Rima</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Italiana&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<section class="scene active intro" id="intro">
+  <p class="micro top">PRIVATE / FOR RIMA ONLY</p>
+  <div class="envelope" id="openEnvelope" role="button" tabindex="0">
+    <div class="env-back"></div><div class="letter"><span>RIMA</span><small>THIS IS FOR YOUR EYES ONLY.</small></div>
+    <div class="env-front"></div><div class="env-flap"></div><div class="seal">R</div>
+  </div>
+  <h1>A message<br>for <em>you.</em></h1>
+  <button class="link-btn" id="openText">TAP TO OPEN ↗</button>
+  <p class="micro bottom">NO CONTEXT. NO SPOILERS.</p>
+</section>
+
+<section class="scene story">
+  <div class="index">01</div><p class="micro top">CONFIDENTIAL</p>
+  <div class="copy"><p>Hi Rima.</p><h2>We need to tell<br>you something.</h2><span class="rule"></span><p class="sub">It’s been difficult to keep this quiet.</p></div>
+  <button class="next">CONTINUE</button>
+</section>
+
+<section class="scene story black">
+  <div class="index">02</div><p class="micro top">A SMALL CLUE</p>
+  <div class="copy"><h2>Someone’s life<br>is about to<br><em>change.</em></h2><p class="sub">In the very best way.</p></div>
+  <button class="next invert">KEEP GOING</button>
+</section>
+
+<section class="scene story">
+  <div class="index">03</div><p class="micro top">GETTING WARMER</p>
+  <div class="copy"><h2>She’s closer<br>than you think.</h2><p class="sub">Beautiful. Red-haired. About to start a whole new chapter.</p></div>
+  <button class="next">I HAVE A GUESS</button>
+</section>
+
+<section class="scene question">
+  <p class="micro top">04 / YOUR TURN</p>
+  <div class="copy"><h2>Who do you<br>think she is?</h2><p class="sub">Type her name. No cheating.</p></div>
+  <form id="nameForm"><input id="nameInput" placeholder="HER NAME IS…" autocomplete="off"><button>→</button></form>
+  <p id="error"></p>
+</section>
+
+<section class="scene reveal black">
+  <p class="micro top">05 / THE ANSWER</p>
+  <div class="reveal-word"><p>Rima,</p><h2>IT’S<br><em>YOU.</em></h2></div>
+  <button class="next invert">WAIT, WHAT?</button>
+</section>
+
+<section class="scene bride-scene">
+  <img class="full-photo bw" src="rima-bride.png" alt="Rima">
+  <div class="shade"></div>
+  <div class="bride-copy"><p class="micro">SURPRISE</p><h2>RIMA</h2><p class="spaced">BRIDE TO BE</p></div>
+  <button class="next photo-btn">CONTINUE ↓</button>
+</section>
+
+<section class="scene takeover">
+  <p class="micro top">06 / OFFICIAL NOTICE</p>
+  <div class="copy"><p class="eyeline">Your girls have made a decision.</p><h2>WE’RE<br>TAKING<br><em>OVER.</em></h2><p class="sub">One evening. No planning. No questions.<br>Your only job is to show up.</p></div>
+  <button class="next">SHOW ME THE DETAILS</button>
+</section>
+
+<section class="scene event black">
+  <p class="micro top">07 / YOUR ORDERS</p>
+  <h2>13.09.26</h2>
+  <div class="event-list">
+    <div><span>TIME</span><b>18:30</b></div><div><span>PLACE</span><b>SKY LAND</b></div><div><span>DRESS</span><b>WHITE</b></div>
+  </div>
+  <p class="aside">You wear white.<br>We’ll handle everything else.</p>
+  <button class="next invert">NOTED.</button>
+</section>
+
+<section class="scene countdown">
+  <p class="micro top">08 / COUNTING DOWN</p>
+  <div class="copy"><p class="eyeline">Until we steal you for the night</p><h2>NOT<br>LONG<br>NOW.</h2></div>
+  <div class="timer"><div><b id="d">00</b><span>DAYS</span></div><div><b id="h">00</b><span>HRS</span></div><div><b id="m">00</b><span>MIN</span></div><div><b id="s">00</b><span>SEC</span></div></div>
+  <button class="next">ONE MORE THING</button>
+</section>
+
+<section class="scene gallery">
+  <p class="micro top">09 / OUR GIRL</p><h2>A few frames<br>before forever.</h2>
+  <div class="strip"><img src="rima-01.png"><img src="rima-02.png"><img src="rima-03.png"></div>
+  <p class="caption">SAME GIRL / NEW CHAPTER</p><button class="next">LAST QUESTION</button>
+</section>
+
+<section class="scene ready black">
+  <p class="micro top">10 / BE HONEST</p><h2>ARE YOU<br><em>READY?</em></h2>
+  <div class="run-zone" id="runZone"><button id="yes">YES. OBVIOUSLY.</button><button id="no">NO</button></div>
+  <p id="tease"></p>
+</section>
+
+<section class="scene final">
+  <div id="confetti"></div><p class="micro top">CASE CLOSED</p>
+  <div class="copy"><p class="eyeline">Knew you’d say yes.</p><h2>SEE YOU<br>SEPTEMBER<br><em>13.</em></h2><p class="sub">18:30 / SKY LAND / WEAR WHITE</p></div>
+  <div class="signoff"><span>WITH ALL OUR LOVE,</span><b>Your Girls.</b></div>
+  <p class="micro bottom">SOME NIGHTS BECOME FOREVER MEMORIES.</p>
+</section>
+</main>
+<script src="script.js"></script>
+</body></html>
